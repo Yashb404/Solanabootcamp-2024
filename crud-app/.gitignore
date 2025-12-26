@@ -1,0 +1,138 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Anchor
+/anchor/target/debug/
+/anchor/target/deploy/
+/anchor/target/release/
+/anchor/target/sbf-solana-solana/
+/anchor/target/test-ledger/
+/anchor/target/.rustc_info.json/
+.fingerprint
+/target/debug/
+/build
+anchor/programs/crud-app/target/debug/build/anyhow-ac2351cfb649e6b2/build-script-build
+
+########################################
+# Node / JS toolchain
+########################################
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+########################################
+# Testing / Coverage
+########################################
+coverage
+
+########################################
+# Next.js (frontend)
+########################################
+.next
+out
+build
+
+########################################
+# Anchor / Rust / Solana
+########################################
+# Anchor + Rust build artifacts
+anchor/target
+**/target
+**/.anchor
+
+# Anchor-generated IDL / TypeScript bindings
+anchor/target/idl
+anchor/target/types
+
+# Solana program build artifacts (SBF/ELF libs)
+anchor/target/deploy
+anchor/target/sbpf-solana-solana
+
+# Local Solana validator / ledger data
+test-ledger
+**/test-ledger
+**/ledger
+**/snapshot
+**/accounts
+**/rocksdb
+**/admin.rpc
+
+# Common Solana keypair naming pattern (adjust if needed)
+*-keypair.json
+
+########################################
+# Misc / OS / Editor
+########################################
+.DS_Store
+*.pem
+.idea
+.vscode
+
+########################################
+# Logs
+########################################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+########################################
+# Env files (secrets)
+########################################
+.env*
+
+########################################
+# TypeScript
+########################################
+*.tsbuildinfo
+next-env.d.ts
+
+########################################
+# Vercel
+########################################
+.vercel
